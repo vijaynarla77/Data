@@ -1,6 +1,5 @@
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 
 import org.apache.poi.xssf.usermodel.XSSFSheet;
@@ -20,7 +19,7 @@ public class Sampledatawrite {
 		wb = new XSSFWorkbook(fs);
 		
 		xsff = wb.getSheet(Sheetname);
-		xsff.getRow(row).createCell(column).setCellValue(cellvalue);
+		//xsff.getRow(row).createCell(column).setCellValue(cellvalue);
 		
 		FileOutputStream fos = new FileOutputStream(f1);		
 	}
